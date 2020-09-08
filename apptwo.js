@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 app.use(express.json())
-const port = process.env.PORT || 3000
+var PORT = process.env.PORT || 3000
 
 // GET method route
 app.get('/', function (req, res) {
@@ -14,6 +14,6 @@ app.post('/', function (req, res) {
   res.send('Ciao io mi chiamo ' + req.body.nome + ";");
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+app.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`)
 })

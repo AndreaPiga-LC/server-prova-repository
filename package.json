@@ -9,6 +9,10 @@
   "url" : "https://github.com/AndreaPiga-LC/server-prova-repository"
   },
   
+  "engines": {
+    "node": "12.18.3"
+  },
+  
   "requires": true,
   "lockfileVersion": 1,
   "dependencies": {
